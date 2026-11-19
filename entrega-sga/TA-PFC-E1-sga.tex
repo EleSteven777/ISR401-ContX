@@ -1,0 +1,43 @@
+% =====================================================================
+%  PDF de UNA SOLA PAGINA para subir al SGA (criterio de piso P1).
+%  Compilar: pdflatex TA-PFC-E1-sga.tex
+%  Verifique que: (1) sale 1 pagina, (2) la URL cabe en UNA linea,
+%  (3) la URL abre el repositorio publico.
+% =====================================================================
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+  {\Large\bfseries Universidad T\'ecnica Estatal de Quevedo\par}
+  {\large Facultad de Ciencias de la Computaci\'on $\cdot$ Carrera de Software\par}
+  \vspace{0.4cm}
+  {\large Ingenier\'ia de Requerimientos (ISR-401) $\cdot$ 4.\textsuperscript{o} nivel $\cdot$ Paralelo A\par}
+\end{center}
+\vspace{1cm}
+
+\noindent
+\begin{tabular}{@{}p{4.5cm}p{11cm}@{}}
+  \textbf{Estudiantes:}    & APELLIDOS NOMBRES 1 \\
+                           & APELLIDOS NOMBRES 2 \\
+                           & APELLIDOS NOMBRES 3 \\
+                           & APELLIDOS NOMBRES 4 \\[0.3cm]
+  \textbf{Equipo:}         & ISR401-ContX \\[0.3cm]
+  \textbf{C\'odigo de la tarea:} & TA-PFC-E1 \\[0.3cm]
+  \textbf{Nombre de la tarea:}   & Proyecto Fin de Curso, entrega 1: visi\'on, alcance, partes interesadas, contexto y plan de elicitaci\'on \\[0.3cm]
+  \textbf{Docente:}        & Gleiston Cicer\'on Guerrero Ulloa, PhD \\[0.3cm]
+  \textbf{Fecha l\'imite:} & s\'abado 21 de noviembre de 2026, 23:59 \\
+\end{tabular}
+
+\vspace{1cm}
+\noindent\textbf{URL del repositorio:}\par
+\vspace{0.2cm}
+\noindent{\large\url{https://github.com/EleSteven777/ISR401-ContX}}
+\end{document}
