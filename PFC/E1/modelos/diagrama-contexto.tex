@@ -1,0 +1,33 @@
+% =====================================================================
+%  Fuente editable: diagrama de contexto (TikZ)
+%  Se incluye desde secciones/05-contexto.tex con \input.
+%  Centro: el sistema (limite). Alrededor: entidades externas (personas,
+%  roles, sistemas, organismos). Flechas: flujos de informacion con
+%  nombre. Reemplace los textos "Entidad n" y "flujo" por los reales.
+% =====================================================================
+\begin{tikzpicture}[
+    node distance=1.8cm and 2.4cm,
+    sistema/.style={circle, draw=uteqverde, very thick, fill=green!8,
+                    minimum size=3.2cm, align=center, font=\small\bfseries},
+    entidad/.style={rectangle, draw, thick, fill=gray!8, minimum width=2.8cm,
+                    minimum height=1cm, align=center, font=\small},
+    flujo/.style={-{Stealth}, thick},
+    etq/.style={font=\scriptsize, fill=white, inner sep=1pt, align=center}
+  ]
+  \node[sistema] (S) {Sistema\\ \sistemaDiagrama};
+
+  \node[entidad, above left=of S]  (E1) {Entidad 1\\(rol)};
+  \node[entidad, above right=of S] (E2) {Entidad 2\\(rol)};
+  \node[entidad, left=of S]        (E3) {Entidad 3\\(sistema externo)};
+  \node[entidad, right=of S]       (E4) {Entidad 4\\(rol)};
+  \node[entidad, below left=of S]  (E5) {Entidad 5\\(organismo)};
+  \node[entidad, below right=of S] (E6) {Entidad 6\\(rol)};
+
+  \draw[flujo] (E1) -- node[etq] {flujo de\\entrada} (S);
+  \draw[flujo] (S)  -- node[etq] {flujo de\\salida}  (E2);
+  \draw[flujo] (E3.10)  -- node[etq, above] {flujo} (S.170);
+  \draw[flujo] (S.190)  -- node[etq, below] {flujo} (E3.350);
+  \draw[flujo] (E4) -- node[etq] {flujo} (S);
+  \draw[flujo] (S)  -- node[etq] {flujo} (E5);
+  \draw[flujo] (E6) -- node[etq] {flujo} (S);
+\end{tikzpicture}
