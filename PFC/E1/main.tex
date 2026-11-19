@@ -1,0 +1,163 @@
+% =====================================================================
+%  ISR-401 Ingenieria de Requerimientos - UTEQ
+%  TA-PFC-E1: vision, alcance, partes interesadas, contexto y plan de
+%  elicitacion
+%  Compilar: pdflatex main -> bibtex main -> pdflatex main -> pdflatex main
+%  (o simplemente: latexmk -pdf main.tex)
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Codificacion e idioma ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-tabla,es-noshorthands]{babel}
+
+% ---------- Pagina ----------
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---------- Tablas, listas, figuras ----------
+\usepackage{graphicx}
+\graphicspath{{figuras/}}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{amssymb} % \square en los instrumentos
+
+% ---------- Diagramas (fuentes en modelos/) ----------
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,fit,calc}
+
+% ---------- Enlaces ----------
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+% ---------- Metadatos del PDF ----------
+\hypersetup{
+  pdftitle={TA-PFC-E1: Vision, alcance, partes interesadas, contexto y plan de elicitacion},
+  pdfauthor={Equipo ISR401-ContX},
+  pdfsubject={Ingenieria de Requerimientos ISR-401, UTEQ},
+  pdfkeywords={requisitos, elicitacion, partes interesadas, ISO/IEC/IEEE 29148}
+}
+
+% ---------- Colores y macros ----------
+\definecolor{uteqverde}{RGB}{16,122,62}
+\definecolor{pendiente}{RGB}{200,0,0}
+% \pendiente{...} marca lo que el equipo debe completar.
+% Antes de entregar, busque "\pendiente" en todo el proyecto: no debe quedar ninguno.
+\newcommand{\pendiente}[1]{\textcolor{pendiente}{\textbf{[PENDIENTE: #1]}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% ---------- Datos del equipo (editar aqui una sola vez) ----------
+\newcommand{\sigla}{ContX}
+\newcommand{\organizacion}{\pendiente{nombre de la organizacion}}
+\newcommand{\sistema}{\pendiente{nombre corto del sistema}}
+\newcommand{\sistemaDiagrama}{(nombre)} % texto plano para el diagrama de contexto
+\newcommand{\repourl}{https://github.com/EleSteven777/ISR401-ContX}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small UTEQ $\cdot$ ISR-401}
+\rhead{\small TA-PFC-E1 $\cdot$ ISR401-\sigla}
+\cfoot{\small \thepage}
+
+\begin{document}
+
+% =====================================================================
+%  PORTADA
+% =====================================================================
+\begin{titlepage}
+  \centering
+  {\Large\bfseries Universidad T\'ecnica Estatal de Quevedo\par}
+  \vspace{0.2cm}
+  {\large Facultad de Ciencias de la Computaci\'on\par}
+  {\large Carrera de Software\par}
+  \vspace{1.5cm}
+  {\large Ingenier\'ia de Requerimientos (ISR-401) $\cdot$ 4.\textsuperscript{o} nivel $\cdot$ Paralelo A\par}
+  \vspace{1.5cm}
+  {\color{uteqverde}\rule{\linewidth}{1pt}\par}
+  \vspace{0.4cm}
+  {\LARGE\bfseries TA-PFC-E1\par}
+  \vspace{0.3cm}
+  {\Large Proyecto Fin de Curso, entrega 1:\\
+   visi\'on, alcance, partes interesadas, contexto y plan de elicitaci\'on\par}
+  \vspace{0.4cm}
+  {\color{uteqverde}\rule{\linewidth}{1pt}\par}
+  \vspace{1cm}
+  {\large Organizaci\'on: \organizacion\par}
+  {\large Sistema: \sistema\par}
+  \vspace{1.5cm}
+  {\large\bfseries Integrantes (equipo ISR401-\sigla)\par}
+  \vspace{0.3cm}
+  \begin{tabular}{ll}
+    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
+    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
+    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
+    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
+  \end{tabular}
+  \vfill
+  {\large Docente: Gleiston Cicer\'on Guerrero Ulloa, PhD\par}
+  \vspace{0.3cm}
+  {\large Repositorio: \url{\repourl}\par}
+  \vspace{0.3cm}
+  {\large Quevedo, noviembre de 2026\par}
+\end{titlepage}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+% =====================================================================
+%  CUERPO (12 a 20 paginas de contenido)
+% =====================================================================
+\input{secciones/01-introduccion}
+\input{secciones/02-organizacion}
+\input{secciones/03-vision-alcance}
+\input{secciones/04-partes-interesadas}
+\input{secciones/05-contexto}
+\input{secciones/06-plan-elicitacion}
+\input{secciones/07-etica-datos}
+\input{secciones/08-gestion-proyecto}
+\input{secciones/09-conclusiones}
+\input{secciones/10-declaracion-ia}
+
+% =====================================================================
+%  REFERENCIAS (estilo IEEE)
+% =====================================================================
+\clearpage
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+% =====================================================================
+%  ANEXOS: instrumentos y consentimiento
+% =====================================================================
+\clearpage
+\appendix
+\section{Guion de entrevista}\label{anx:entrevista}
+\input{instrumentos/guion-entrevista}
+
+\clearpage
+\section{Cuestionario}\label{anx:cuestionario}
+\input{instrumentos/cuestionario}
+
+\clearpage
+\section{Gu\'ia de observaci\'on}\label{anx:observacion}
+\input{instrumentos/guia-observacion}
+
+\clearpage
+\section{Modelo de consentimiento informado}\label{anx:consentimiento}
+\input{instrumentos/consentimiento-informado}
+
+\end{document}
