@@ -1,0 +1,35 @@
+# Archivos auxiliares de LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.run.xml
+*.bcf
+*.nav
+*.snm
+*.vrb
+
+# OJO: main.pdf SI se versiona (es entregable). No ignorar *.pdf.
+
+# Evidencias privadas: nunca subir originales con datos personales
+PFC/**/evidencias/privado/
+*.mp3
+*.m4a
+*.wav
+*.ogg
+*.mp4
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
