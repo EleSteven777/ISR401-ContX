@@ -54,7 +54,7 @@
 \definecolor{pendiente}{RGB}{200,0,0}
 % \pendiente{...} marca lo que el equipo debe completar.
 % Antes de entregar, busque "\pendiente" en todo el proyecto: no debe quedar ninguno.
-\newcommand{\pendiente}[1]{\textcolor{pendiente}{\textbf{[PENDIENTE: #1]}}}
+\newcommand{\pendiente}[1]{\textcolor{pendiente}{\textbf{[PEN\-DIEN\-TE: #1]}}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
@@ -73,6 +73,7 @@
 \cfoot{\small \thepage}
 
 \begin{document}
+\hypersetup{pageanchor=false}
 
 % =====================================================================
 %  PORTADA
@@ -100,12 +101,12 @@
   \vspace{1.5cm}
   {\large\bfseries Integrantes (equipo ISR401-\sigla)\par}
   \vspace{0.3cm}
-  \begin{tabular}{ll}
-    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
-    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
-    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
-    \pendiente{Apellidos, Nombres} & \pendiente{rol} \\
-  \end{tabular}
+  {\small
+  \noindent\begin{tabularx}{\linewidth}{@{}YY@{}}
+    Alvarez Rubio Rai Eduardo & Análisis y documentación \\
+    Holguin Mendoza Jonathan Alexander & Validación y trazabilidad \\
+    Basurto Anchaguano Jordan Steven & Coordinación y elicitación \\
+  \end{tabularx}\par}
   \vfill
   {\large Docente: Gleiston Cicer\'on Guerrero Ulloa, PhD\par}
   \vspace{0.3cm}
@@ -113,6 +114,7 @@
   \vspace{0.3cm}
   {\large Quevedo, noviembre de 2026\par}
 \end{titlepage}
+\hypersetup{pageanchor=true}
 
 \tableofcontents
 \listoffigures
@@ -131,7 +133,6 @@
 \input{secciones/07-etica-datos}
 \input{secciones/08-gestion-proyecto}
 \input{secciones/09-conclusiones}
-\input{secciones/10-declaracion-ia}
 
 % =====================================================================
 %  REFERENCIAS (estilo IEEE)

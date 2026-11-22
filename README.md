@@ -6,16 +6,15 @@ Quevedo (UTEQ). Período SPA 2026–2027 · 4.º nivel · Paralelo A.
 
 **Docente:** Gleiston Cicerón Guerrero Ulloa, PhD
 
-**Organización del Proyecto Fin de Curso:** _(nombre de la organización real)_
+**Organización del Proyecto Fin de Curso:** Taller JC|cell, cantón Quevedo, Los Ríos.
 
 ## Integrantes
 
-| Integrante | Usuario GitHub | Rol en el equipo |
-|------------|----------------|------------------|
-| Apellidos Nombres 1 | `@usuario1` | |
-| Apellidos Nombres 2 | `@usuario2` | |
-| Apellidos Nombres 3 | `@usuario3` | |
-| Apellidos Nombres 4 | `@usuario4` | |
+| Integrante | Rol en el equipo |
+|------------|------------------|
+| Alvarez Rubio Rai Eduardo | Análisis y documentación |
+| Holguin Mendoza Jonathan Alexander | Validación y trazabilidad |
+| Basurto Anchaguano Jordan Steven | Coordinación y elicitación |
 
 ## Índice de carpetas
 
@@ -90,6 +89,14 @@ latexmk -pdf main.tex
 
 Resultado: `PFC/E1/main.pdf`.
 
+Alternativa con **Tectonic** (requiere acceso a su repositorio de paquetes en la primera
+compilación):
+
+```bash
+cd PFC/E1
+tectonic --untrusted main.tex
+```
+
 ### PDF para el SGA
 
 ```bash
@@ -105,8 +112,3 @@ Ningún dato personal de terceros (cédulas, teléfonos, correos personales, aud
 consentimientos firmados) se publica en este repositorio. Los originales se guardan en la
 carpeta institucional privada del equipo y se registran en
 [`PFC/E1/evidencias/MANIFIESTO.md`](PFC/E1/evidencias/MANIFIESTO.md) con su huella SHA-256.
-
-## Uso de inteligencia artificial
-
-La declaración de uso de IA de cada entrega está en la sección final de su documento
-(`secciones/10-declaracion-ia.tex`).
