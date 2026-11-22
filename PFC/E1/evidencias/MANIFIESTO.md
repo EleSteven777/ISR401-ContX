@@ -4,7 +4,7 @@ Los originales de estas evidencias **no se publican** en este repositorio porque
 datos personales de terceros (LOPDP). Se custodian en la carpeta institucional privada del
 equipo (cuenta `@uteq.edu.ec`), compartida con el docente.
 
-- **Carpeta privada:** _(PENDIENTE: nombre de la carpeta, no el enlace)_
+- **Carpeta privada:** `ISR401-ContX-evidencias-privadas` (cuenta institucional `@uteq.edu.ec`; acceso restringido al equipo y al docente)
 - **Administrador de la carpeta:** Basurto Anchaguano Jordan Steven
 
 La huella SHA-256 permite comprobar que el archivo original no fue modificado. Se calcula con:
