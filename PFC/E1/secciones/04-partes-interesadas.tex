@@ -1,82 +1,69 @@
-% =====================================================================
 \section{Partes interesadas}\label{sec:partes}
-% =====================================================================
-% Minimo 8, como ROLES (nunca nombres de personas). Incluya roles
-% internos y externos (clientes, proveedores, entes de control, etc.).
-% Interes/Influencia: Alto/Medio/Bajo, con una justificacion breve basada
-% en lo observado en la organizacion.
-% Fundamento: \cite{iso29148} exige identificar partes interesadas antes
-% de definir requisitos; \cite{pohl2025,ireb2026} para clasificacion.
 
-\pendiente{P\'arrafo breve: c\'omo se identificaron las partes interesadas (fuentes, reuniones) y el concepto de parte interesada usado, con cita.}
+Se consideran los roles que usan, aportan información o influyen en la propuesta, siguiendo la
+identificación de fuentes de requisitos~\cite{ireb2026}. Los roles del taller se obtuvieron de
+SE-01 (A1--A4, B2--B8; EV-04); los del equipo y el docente corresponden al proyecto académico.
 
 \subsection{Registro de partes interesadas}
-La Tabla~\ref{tab:partes} registra las partes interesadas identificadas.
-La valoración de interés e influencia de PI-01 es una propuesta inicial basada en SE-01,
-pendiente de revisión del equipo; su disponibilidad para nuevas sesiones aún debe acordarse.
+La Tabla~\ref{tab:partes} distingue ocho roles, no ocho personas. El responsable del taller
+también realiza recepción, reparación y cobro (PI-01 a PI-04). No se supone que existan empleados
+adicionales. Clientes y proveedores fueron mencionados, pero no entrevistados. Las valoraciones
+de interés e influencia son una estimación del equipo.
 
-\begin{longtable}{@{}L{1.2cm}L{2.8cm}L{3.8cm}L{1.6cm}L{1.6cm}L{2.2cm}@{}}
-  \caption{Registro de partes interesadas.}\label{tab:partes}\\
-  \toprule
-  \textbf{ID} & \textbf{Rol} & \textbf{Inter\'es en el sistema} & \textbf{Inter\'es} & \textbf{Influen\-cia} & \textbf{Disponi\-bilidad} \\
-  \midrule
-  \endfirsthead
-  \toprule
-  \textbf{ID} & \textbf{Rol} & \textbf{Inter\'es en el sistema} & \textbf{Inter\'es} & \textbf{Influen\-cia} & \textbf{Disponi\-bilidad} \\
-  \midrule
-  \endhead
-  \bottomrule
-  \endfoot
-  PI-01 & Responsable del taller & Mejorar el registro y control de equipos (SE-01, C4). & Alto: es quien usaría el sistema. & Alta: decide sobre la atención y las reparaciones (A1). & \pendiente{acordar días y horas} \\
-  PI-02 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
-  PI-03 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
-  PI-04 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
-  PI-05 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
-  PI-06 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
-  PI-07 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
-  PI-08 & \pendiente{rol} & \pendiente{qu\'e espera} & \pendiente{A / M / B} & \pendiente{A / M / B} & \pendiente{d\'ias/horas} \\
+\begingroup\small\setstretch{1.1}
+\begin{longtable}{@{}L{1cm}L{2.6cm}L{4.5cm}L{1.3cm}L{1.5cm}L{2.4cm}@{}}
+\caption{Roles relacionados con el proyecto.}\label{tab:partes}\\
+\toprule
+\textbf{ID} & \textbf{Rol} & \textbf{Interés y fundamento} & \textbf{Interés} & \textbf{Influen\-cia} & \textbf{Disponi\-bilidad} \\
+\midrule\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Rol} & \textbf{Interés y fundamento} & \textbf{Interés} & \textbf{Influen\-cia} & \textbf{Disponi\-bilidad} \\
+\midrule\endhead
+\bottomrule\endfoot
+PI-01 & Responsable del taller & Decide prioridades y usaría la herramienta (A1, C4, D4). & Alto & Alta & Por acordar con el taller. \\
+PI-02 & Recepción y entrega & Necesita identificar el equipo y registrar su ingreso y retiro (B2, B8). & Alto & Alta & La misma de PI-01. \\
+PI-03 & Técnico de reparación & Necesita consultar diagnóstico, autorización y avance (B3--B5). & Alto & Alta & La misma de PI-01. \\
+PI-04 & Registro y cobro & Necesita distinguir servicios pagados y pendientes (B7). & Alto & Alta & La misma de PI-01. \\
+PI-05 & Cliente & Aporta la falla, autoriza trabajos y recibe el equipo (B1, B3, B6, B8). & Alto & Baja & Sin contacto directo; por coordinar. \\
+PI-06 & Proveedor de repuestos & Informa disponibilidad y precio de piezas (A4, B5). & Medio & Baja & Sin contacto directo; por coordinar. \\
+PI-07 & Equipo de requisitos & Analiza, documenta y revisa la propuesta. & Alto & Alta & Según acuerdos internos. \\
+PI-08 & Docente evaluador & Define y evalúa los criterios académicos de la entrega. & Alto & Alta & Según horario académico; por confirmar. \\
 \end{longtable}
+\endgroup
 
-\subsection{Matriz poder--inter\'es}
-La Figura~\ref{fig:matriz} es una plantilla; sus posiciones aún no representan una valoración
-de las partes interesadas reales. Se actualizará al completar el registro de roles.
-La fuente editable de la figura est\'a en \texttt{modelos/matriz-poder-interes.tex}.
+\subsection{Matriz poder--interés}
+La Figura~\ref{fig:matriz} representa la valoración inicial de la tabla. Los roles PI-01 a
+PI-04 corresponden a una sola persona y no representan cuatro decisiones independientes.
+La influencia se valora sobre esta propuesta académica, no sobre toda la actividad del taller.
 
 \begin{figure}[H]
-  \centering
-  \input{modelos/matriz-poder-interes}
-  \caption{Plantilla de matriz poder--inter\'es, pendiente de completar y validar.}
-  \label{fig:matriz}
+\centering
+\input{modelos/matriz-poder-interes}
+\caption{Matriz poder--interés propuesta por el equipo.}\label{fig:matriz}
 \end{figure}
 
-\pendiente{Interpretar la matriz: qu\'e roles concentran poder, qu\'e conflictos de inter\'es se anticipan.}
+El taller concentra las decisiones operativas. El equipo y el docente influyen en el contenido
+y la calidad del trabajo académico. Clientes y proveedores aportan necesidades indirectas;
+sus opiniones aún deben contrastarse si afectan decisiones del alcance.
 
-\subsection{Estrategia de participaci\'on}
-% Cuadrantes: Gestionar de cerca (alto poder, alto interes), Mantener
-% satisfecho (alto poder, bajo interes), Mantener informado (bajo poder,
-% alto interes), Monitorear (bajo poder, bajo interes). La estrategia
-% debe ser ESPECIFICA de la organizacion (cuando, por que medio, quien
-% del equipo).
-La Tabla~\ref{tab:estrategia} define la estrategia de participaci\'on por parte interesada.
+\subsection{Estrategia de participación}
+La Tabla~\ref{tab:estrategia} propone cómo involucrar a cada rol. Las consultas de PI-01 a
+PI-04 se agruparán en una sola conversación para respetar el tiempo del responsable.
 
-\begin{longtable}{@{}L{1.2cm}L{2.8cm}L{9.6cm}@{}}
-  \caption{Estrategia de participaci\'on.}\label{tab:estrategia}\\
-  \toprule
-  \textbf{ID} & \textbf{Cuadrante} & \textbf{Estrategia (acci\'on, medio, frecuencia, responsable)} \\
-  \midrule
-  \endfirsthead
-  \toprule
-  \textbf{ID} & \textbf{Cuadrante} & \textbf{Estrategia (acci\'on, medio, frecuencia, responsable)} \\
-  \midrule
-  \endhead
-  \bottomrule
-  \endfoot
-  PI-01 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-02 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-03 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-04 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-05 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-06 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-07 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-  PI-08 & \pendiente{cuadrante} & \pendiente{estrategia} \\
-\end{longtable}
+\begin{table}[H]\centering\small
+\caption{Participación prevista por rol.}\label{tab:estrategia}
+\noindent\begin{tabularx}{\linewidth}{@{}L{1cm}L{3cm}Y@{}}
+\toprule
+\textbf{ID} & \textbf{Estrategia} & \textbf{Acción y responsable} \\
+\midrule
+PI-01 & Gestionar de cerca & Jordan coordinará la revisión de prioridades y alcance antes de cerrarlos. \\
+PI-02 & Gestionar de cerca & El equipo revisará un ejemplo de recepción y entrega en SE-02. \\
+PI-03 & Gestionar de cerca & El equipo comprobará cómo se registra y consulta el estado en SE-02. \\
+PI-04 & Gestionar de cerca & Jonathan revisará ejemplos sin datos personales para distinguir pagado y pendiente. \\
+PI-05 & Mantener informado & Jordan propondrá el cuestionario CUE-01; participación y fecha por acordar. \\
+PI-06 & Mantener informado & Se consultará disponibilidad de piezas solo si cambia el alcance; en E1 se usa la referencia indirecta de B5. \\
+PI-07 & Gestionar de cerca & Los integrantes revisarán cambios y pendientes antes de cada versión. \\
+PI-08 & Gestionar de cerca & El equipo contrastará la entrega con la guía y llevará dudas a tutoría. \\
+\bottomrule
+\end{tabularx}
+\end{table}

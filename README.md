@@ -26,7 +26,7 @@ Quevedo (UTEQ). Período SPA 2026–2027 · 4.º nivel · Paralelo A.
 | [`PFC/E1/referencias.bib`](PFC/E1/referencias.bib) | Referencias BibTeX (estilo IEEE) |
 | [`PFC/E1/secciones/`](PFC/E1/secciones/) | Una sección del documento por archivo `.tex` |
 | [`PFC/E1/instrumentos/`](PFC/E1/instrumentos/) | Guion de entrevista, cuestionario, guía de observación y modelo de consentimiento |
-| [`PFC/E1/modelos/`](PFC/E1/modelos/) | Fuentes editables (TikZ) del diagrama de contexto y la matriz poder–interés |
+| [`PFC/E1/modelos/`](PFC/E1/modelos/) | Fuentes editables (TikZ y draw.io) del diagrama de contexto y la matriz poder–interés |
 | [`PFC/E1/figuras/`](PFC/E1/figuras/) | Imágenes exportadas y capturas anonimizadas |
 | [`PFC/E1/evidencias/MANIFIESTO.md`](PFC/E1/evidencias/MANIFIESTO.md) | Registro (nombre, fecha, duración, SHA-256) de las evidencias privadas |
 | [`entrega-sga/`](entrega-sga/) | Fuente del PDF de una página que se sube al SGA |
@@ -45,7 +45,7 @@ ISR401-ContX/
         ├── secciones/      01-introduccion.tex … 10-declaracion-ia.tex
         ├── instrumentos/   guion-entrevista.tex, cuestionario.tex,
         │                   guia-observacion.tex, consentimiento-informado.tex
-        ├── modelos/        diagrama-contexto.tex, matriz-poder-interes.tex
+        ├── modelos/        fuentes .tex y .drawio de los dos modelos
         ├── figuras/
         └── evidencias/     MANIFIESTO.md
 ```
@@ -63,7 +63,8 @@ ISR401-ContX/
   `xcolor`, `enumitem`, `caption`, `float`, `amssymb`, `tikz`, `hyperref`, `url`.
   MiKTeX los instala automáticamente la primera vez; en TeX Live vienen con `scheme-full`
   (o instalar con `tlmgr install <paquete>`).
-- No se requieren herramientas externas: los diagramas se dibujan con TikZ desde `modelos/`.
+- Los diagramas del informe se dibujan con TikZ desde `modelos/`; no requieren un programa externo.
+  Las versiones `.drawio` permiten editarlos en diagrams.net. `figuras/` contiene sus exportaciones PDF.
 
 ### Entrega 1 (`PFC/E1`)
 

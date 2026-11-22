@@ -1,43 +1,25 @@
-% =====================================================================
-%  Fuente editable: matriz poder-interes (TikZ)
-%  Se incluye desde secciones/04-partes-interesadas.tex con \input.
-%  Para mover una parte interesada, cambie sus coordenadas (x = interes,
-%  y = poder), ambas en el rango 0..10. Los IDs deben coincidir con la
-%  Tabla de registro de partes interesadas.
-% =====================================================================
-\begin{tikzpicture}[
-    scale=0.8,
-    parte/.style={circle, fill=uteqverde, text=white, inner sep=1.5pt, font=\scriptsize\bfseries}
-  ]
-  % Cuadrantes
-  \fill[gray!8]  (0,5) rectangle (5,10);
-  \fill[green!10](5,5) rectangle (10,10);
-  \fill[gray!3]  (0,0) rectangle (5,5);
-  \fill[gray!8]  (5,0) rectangle (10,5);
-  \draw[thick] (0,0) rectangle (10,10);
-  \draw[dashed] (5,0) -- (5,10);
-  \draw[dashed] (0,5) -- (10,5);
-
-  % Etiquetas de cuadrantes
-  \node[font=\small\itshape, align=center] at (2.5,9.3) {Mantener satisfecho};
-  \node[font=\small\itshape, align=center] at (7.5,9.3) {Gestionar de cerca};
-  \node[font=\small\itshape, align=center] at (2.5,0.7) {Monitorear};
-  \node[font=\small\itshape, align=center] at (7.5,0.7) {Mantener informado};
-
-  % Ejes
-  \draw[-{Stealth}] (0,0) -- (10.6,0) node[right] {Inter\'es};
-  \draw[-{Stealth}] (0,0) -- (0,10.6) node[above] {Poder};
-  \node[below, font=\scriptsize] at (0,0) {Bajo};
-  \node[below, font=\scriptsize] at (10,0) {Alto};
-  \node[left,  font=\scriptsize] at (0,10) {Alto};
-
-  % Partes interesadas (POSICIONES PROVISIONALES: reemplazar)
-  \node[parte] at (8.5,8.0) {PI-01};
-  \node[parte] at (7.0,7.0) {PI-02};
-  \node[parte] at (3.0,7.5) {PI-03};
-  \node[parte] at (2.0,6.2) {PI-04};
-  \node[parte] at (8.0,3.5) {PI-05};
-  \node[parte] at (6.5,2.5) {PI-06};
-  \node[parte] at (3.5,3.0) {PI-07};
-  \node[parte] at (1.5,2.0) {PI-08};
+% Posiciones cualitativas propuestas; PI-01 a PI-04 son roles de la misma persona.
+\begin{tikzpicture}[x=0.76cm,y=0.68cm,
+parte/.style={rectangle,rounded corners=2pt,fill=uteqverde,text=white,inner sep=2pt,font=\scriptsize\bfseries}]
+\fill[gray!6] (0,0) rectangle (10,10);
+\fill[green!9] (5,5) rectangle (10,10);
+\draw[thick] (0,0) rectangle (10,10);
+\draw[dashed] (5,0)--(5,10);\draw[dashed] (0,5)--(10,5);
+\node[font=\small\itshape,align=center] at (2.5,9.4) {Mantener satisfecho};
+\node[font=\small\itshape,align=center] at (7.5,9.4) {Gestionar de cerca};
+\node[font=\small\itshape] at (2.5,0.7) {Monitorear};
+\node[font=\small\itshape] at (7.5,0.7) {Mantener informado};
+\draw[-{Stealth}] (0,0)--(10.5,0) node[right] {Interés};
+\draw[-{Stealth}] (0,0)--(0,10.5) node[above] {Poder};
+\node[below,font=\scriptsize] at (0,0) {Bajo};
+\node[below,font=\scriptsize] at (10,0) {Alto};
+\node[left,font=\scriptsize] at (0,10) {Alto};
+\node[parte] at (9.1,8.3) {PI-01};
+\node[parte] at (6.1,7.1) {PI-02};
+\node[parte] at (7.6,7.1) {PI-03};
+\node[parte] at (9.1,7.1) {PI-04};
+\node[parte] at (8.5,2.4) {PI-05};
+\node[parte] at (5.8,2.4) {PI-06};
+\node[parte] at (6.1,8.3) {PI-07};
+\node[parte] at (7.6,8.3) {PI-08};
 \end{tikzpicture}

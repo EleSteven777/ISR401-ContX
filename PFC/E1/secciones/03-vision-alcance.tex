@@ -14,10 +14,11 @@ instalar el sistema; su alcance debe validarse con el responsable del taller.
 \subsection{Objetivos de negocio}
 El participante expres\'o que le gustar\'ia encontrar antes la informaci\'on de cada equipo, ubicar
 las reparaciones pendientes y evitar confusiones y cobros olvidados (SE-01, C4, D1; EV-04).
-La entrevista no incluy\'o mediciones iniciales ni metas acordadas. Por eso, los indicadores de la
-Tabla~\ref{tab:objetivos} son propuestas para medir esos resultados; las l\'ineas base, metas y
-plazos se completar\'an tras revisar ejemplos anonimizados y acordarlos con el responsable. Hasta
-entonces, los objetivos siguen como borrador y no se consideran verificables.
+La entrevista no incluyó mediciones iniciales ni metas acordadas. La
+Tabla~\ref{tab:objetivos} propone indicadores y metas para consultar con el responsable.
+Las metas son del equipo, no cifras obtenidas de la entrevista ni compromisos aceptados por el
+taller. Se evaluarán durante el primer mes de uso si la herramienta llega a adoptarse; primero
+debe medirse la situación inicial con ejemplos anonimizados.
 
 \begin{table}[H]
   \centering
@@ -29,9 +30,9 @@ entonces, los objetivos siguen como borrador y no se consideran verificables.
     \toprule
     \textbf{ID} & \textbf{Resultado buscado} & \textbf{Indicador} & \textbf{L\'inea base} & \textbf{Meta y plazo} \\
     \midrule
-    ON-01 & Reducir el tiempo que toma localizar los datos y el estado de un servicio. Fuente: C3--C4, D1. & Mediana de minutos de las búsquedas completadas; registrar también las fallidas. & \pendiente{medir con ejemplos anonimizados (E3)} & \pendiente{acordar meta y fecha tras medir} \\
-    ON-02 & Mejorar la consistencia del seguimiento de las reparaciones. Fuente: B4, C2, C4. & Servicios con estado coincidente / servicios verificables de la muestra $\times 100$. & \pendiente{revisar ejemplos de trabajos (E3)} & \pendiente{acordar porcentaje y plazo} \\
-    ON-03 & Disminuir los cobros pendientes que quedan sin seguimiento al entregar un equipo. Fuente: B7, C2, D1. & Número de entregas con saldo pendiente confirmado, sin marca de pendiente en el registro. & \pendiente{revisar ejemplos de cobro (E3)} & \pendiente{acordar meta y fecha tras medir} \\
+    ON-01 & Reducir el tiempo que toma localizar los datos y el estado de un servicio. Fuente: C3--C4, D1. & Mediana de minutos de las búsquedas completadas; registrar también las fallidas. & Por medir con ejemplos (E3). & Propuesta: mediana menor que la inicial, al terminar el primer mes de uso. \\
+    ON-02 & Mejorar la consistencia del seguimiento de las reparaciones. Fuente: B4, C2, C4. & Servicios con estado coincidente / servicios verificables de la muestra $\times 100$. & Por medir con registros de trabajo (E3). & Propuesta: 100\% de coincidencia en la muestra, al terminar el primer mes de uso. \\
+    ON-03 & Disminuir los cobros pendientes que quedan sin seguimiento al entregar un equipo. Fuente: B7, C2, D1. & Número de entregas con saldo pendiente confirmado, sin marca de pendiente en el registro. & Por medir con registros de entrega (E3). & Propuesta: cero omisiones en la muestra, al terminar el primer mes de uso. \\
     \bottomrule
   \end{tabularx}
   \normalsize
@@ -58,7 +59,7 @@ criterios de selección antes de recoger los datos:
 \end{itemize}
 Las comparaciones posteriores usarán los mismos criterios; en ON-03 se usarán muestras del mismo
 tamaño y se indicará el período revisado. La medición y sus condiciones aún deben acordarse y
-realizarse; por eso se mantienen pendientes las líneas base, metas y fechas.
+realizarse. Las líneas base siguen por medir y la aceptación de estas metas queda por confirmar.
 
 \subsection{Alcance}
 La propuesta se centra en que el responsable pueda registrar y consultar los servicios del taller.
@@ -103,6 +104,9 @@ detalle en la entrevista no demuestra que una función sea innecesaria. Antes de
 se confirmarán tanto las inclusiones como las exclusiones con el responsable.
 
 \subsection{Restricciones conocidas}
+La facilidad de uso solicitada en D3 se considera al revisar la calidad de la propuesta,
+tomando como referencia el modelo de calidad del producto de ISO/IEC 25010:2023~\cite{iso25010}.
+
 La Tabla~\ref{tab:restricciones} separa las condiciones expresadas por el responsable de los datos
 que todav\'ia deben confirmarse. No se fija una plataforma t\'ecnica ni una obligaci\'on legal que no
 haya sido verificada para este proyecto.
@@ -119,7 +123,7 @@ haya sido verificada para este proyecto.
     \midrule
     RE-01 & Datos y privacidad & Los ejemplos usados en el proyecto deben mantenerse anonimizados; los originales y datos identificables no se publican. El tratamiento, acceso y conservaci\'on de datos reales del sistema a\'un deben definirse. & Manifiesto de evidencias; EV-03 y EV-04 \\
     RE-02 & Recursos & La propuesta debe considerar la computadora, los celulares y la conexi\'on disponibles, y no requerir equipos costosos ni conocimientos t\'ecnicos avanzados. La plataforma y la calidad m\'inima de conexi\'on quedan por validar. & SE-01, D2--D3; EV-04 \\
-    RE-03 & Plazo del proyecto & La fecha l\'imite y el calendario de hitos deben confirmarse con el cronograma oficial antes de fijar metas. & Cronograma del PFC; fecha pendiente de confirmaci\'on \\
+    RE-03 & Plazo académico & E1 cierra el 21/11/2026 a las 23:59. El plan se extiende hasta la semana 17; los hitos siguientes se ajustarán al calendario oficial. & Guía de E1; sección~\ref{sec:gestion} \\
     \bottomrule
   \end{tabularx}
   \normalsize
