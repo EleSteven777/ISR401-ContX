@@ -21,7 +21,6 @@ sha256sum archivo.pdf
 
 | ID | Archivo (en la carpeta privada) | Tipo | Fecha | Duración | SHA-256 |
 |----|---------------------------------|------|-------|----------|---------|
-| EV-01 | _(PENDIENTE)_ | Carta de aceptación firmada | _(PENDIENTE)_ | — | _(PENDIENTE)_ |
 | EV-02 | _(PENDIENTE)_ | Registro del primer contacto (conversación previa) | _(PENDIENTE)_ | _(PENDIENTE)_ | _(PENDIENTE)_ |
 | EV-03 | `EV03_consentimiento_JC-731.pdf` | Consentimiento PFC-ISR401-CONTX-A03 v1.3 firmado | 2026-11-20 | — | _(PENDIENTE)_ |
 | EV-04 | `EV04_transcripcion_SE-01_JC-731.docx` | Transcripción de la entrevista SE-01 | _(PENDIENTE)_ | — | _(PENDIENTE)_ |
