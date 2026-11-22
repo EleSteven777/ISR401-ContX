@@ -23,7 +23,7 @@ sha256sum archivo.pdf
 |----|---------------------------------|------|-------|----------|---------|
 | EV-03 | `Consentimiento_JCcell.pdf` | Consentimiento PFC-ISR401-CONTX-A03 v1.3 firmado (JC-731) | 2026-11-20 | — | `c18cd389baaee379e585adad2cb0387be103883297f6ea5909c8e9880802284c` |
 | EV-04 | `Entrevista_JCcell.docx` | Transcripción de la entrevista SE-01 (JC-731) | 2026-11-21 | — | `9100f5c58ea3030eca5f2e3baf4c88885ead4e8fcb184692ce05291c55e856f9` |
-| EV-05 | `Audio-Entrevista.mp4` | Grabación de audio de SE-01 (autorizada, opción b) | 2026-11-21 | 12 min 44 s | `560b690931f9f5930e901c4b03d4f0ae198d0de729acf992ed62d1d8b7c1501f` |
+| EV-05 | `Audio-Entrevista.mp3` | Grabación de audio de SE-01 (autorizada, opción b) | 2026-11-21 | 12 min 44 s | `c199ec3a659a02e09e450f68646de6fa672fc62484f8cf01e977a2f940e05638` |
 
 > Los nombres de archivo no contienen el nombre del participante; se le identifica con el código JC-731.
 > Si un archivo se modifica después de calcular su huella, la huella debe recalcularse.
