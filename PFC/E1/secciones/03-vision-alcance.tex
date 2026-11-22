@@ -4,7 +4,7 @@
 
 \subsection{Declaraci\'on de visi\'on}
 Para la persona responsable de JC\textbar{}cell, que necesita encontrar con facilidad los datos
-de los equipos recibidos y conocer el avance de cada reparaci\'on, proponemos una herramienta
+de los equipos recibidos y conocer el avance de cada reparaci\'on, se propone una herramienta
 sencilla que concentre el registro de ingreso, el diagn\'ostico y el estado del servicio. Se busca
 reducir el tiempo que hoy dedica a revisar anotaciones y ayudarle a identificar los trabajos
 pendientes, manteniendo su atenci\'on directa, sus diagn\'osticos y sus reparaciones. Esta es una
@@ -29,13 +29,36 @@ entonces, los objetivos siguen como borrador y no se consideran verificables.
     \toprule
     \textbf{ID} & \textbf{Resultado buscado} & \textbf{Indicador} & \textbf{L\'inea base} & \textbf{Meta y plazo} \\
     \midrule
-    ON-01 & Reducir el tiempo que toma localizar los datos y el estado de un servicio. & Mediana de minutos para encontrar una ficha en una muestra. & \pendiente{medir con ejemplos anonimizados (E3)} & \pendiente{acordar meta y fecha tras medir} \\
-    ON-02 & Mejorar la consistencia del seguimiento de las reparaciones. & Porcentaje de servicios muestreados cuyo estado registrado coincide con el estado reportado. & \pendiente{revisar ejemplos de trabajos (E3)} & \pendiente{acordar porcentaje y plazo} \\
-    ON-03 & Disminuir los cobros pendientes que quedan sin seguimiento al entregar un equipo. & N\'umero de servicios entregados con saldo pendiente no identificado en el registro. & \pendiente{revisar ejemplos de cobro (E3)} & \pendiente{acordar meta y fecha tras medir} \\
+    ON-01 & Reducir el tiempo que toma localizar los datos y el estado de un servicio. Fuente: C3--C4, D1. & Mediana de minutos de las búsquedas completadas; registrar también las fallidas. & \pendiente{medir con ejemplos anonimizados (E3)} & \pendiente{acordar meta y fecha tras medir} \\
+    ON-02 & Mejorar la consistencia del seguimiento de las reparaciones. Fuente: B4, C2, C4. & Servicios con estado coincidente / servicios verificables de la muestra $\times 100$. & \pendiente{revisar ejemplos de trabajos (E3)} & \pendiente{acordar porcentaje y plazo} \\
+    ON-03 & Disminuir los cobros pendientes que quedan sin seguimiento al entregar un equipo. Fuente: B7, C2, D1. & Número de entregas con saldo pendiente confirmado, sin marca de pendiente en el registro. & \pendiente{revisar ejemplos de cobro (E3)} & \pendiente{acordar meta y fecha tras medir} \\
     \bottomrule
   \end{tabularx}
   \normalsize
 \end{table}
+
+Las fuentes de cada objetivo corresponden a preguntas de SE-01, recogidas en EV-04 y en el
+Anexo~\ref{anx:registro-entrevista}. Los indicadores son propuestas del equipo, no mediciones
+solicitadas o aprobadas por el participante.
+
+Para medirlos, se propone acordar con el responsable el período, el tamaño de la muestra y los
+criterios de selección antes de recoger los datos:
+\begin{itemize}[nosep]
+  \item \textbf{ON-01:} medir desde que se solicita localizar un servicio hasta encontrar sus
+        datos y estado. Acordar un tiempo máximo y registrar las búsquedas fallidas por separado;
+        la mediana se interpretará junto con la cantidad de búsquedas completadas y fallidas.
+  \item \textbf{ON-02:} comparar el estado anotado con el que pueda reconstruirse junto al
+        responsable, usando registros de trabajo o entrega del mismo momento de referencia.
+        Los casos sin respaldo suficiente se contarán aparte, sin asumir que coinciden.
+  \begin{samepage}
+  \item \textbf{ON-03:} contrastar las notas del servicio y la entrega con la aclaración del
+        responsable para identificar saldos pendientes que no quedaron marcados. Registrar solo
+        el estado del cobro, sin datos de clientes; si no puede verificarse, dejar el caso pendiente.
+  \par\end{samepage}
+\end{itemize}
+Las comparaciones posteriores usarán los mismos criterios; en ON-03 se usarán muestras del mismo
+tamaño y se indicará el período revisado. La medición y sus condiciones aún deben acordarse y
+realizarse; por eso se mantienen pendientes las líneas base, metas y fechas.
 
 \subsection{Alcance}
 La propuesta se centra en que el responsable pueda registrar y consultar los servicios del taller.
@@ -49,30 +72,35 @@ detalles de operaci\'on.
   \label{tab:alcance}
   \small
   \renewcommand{\arraystretch}{1.2}
-  \noindent\begin{tabularx}{\linewidth}{@{}L{1.3cm}YL{1.6cm}@{}}
+  \noindent\begin{tabularx}{\linewidth}{@{}L{1.3cm}YL{1.6cm}L{2cm}@{}}
     \toprule
-    \textbf{ID} & \textbf{Capacidad propuesta} & \textbf{Objetivo} \\
+    \textbf{ID} & \textbf{Capacidad propuesta} & \textbf{Objetivo} & \textbf{Fuente} \\
     \midrule
-    \multicolumn{3}{@{}l}{\textit{Dentro del alcance}} \\
-    AL-01 & Registrar la recepci\'on del equipo, sus datos b\'asicos, la falla reportada y el contacto asociado. & ON-02 \\
-    AL-02 & Guardar el diagn\'ostico, la autorizaci\'on del cliente y el estado de cada reparaci\'on. & ON-02 \\
-    AL-03 & Consultar y localizar equipos y servicios activos, incluidos los que esperan revisi\'on, autorizaci\'on, repuesto o entrega. & ON-01 \\
-    AL-04 & Anotar el valor comunicado y si el servicio qued\'o pagado o pendiente, sin procesar pagos. & ON-03 \\
-    AL-05 & Consultar el historial de reparaciones asociadas a un equipo; su inclusi\'on se confirmar\'a con el responsable (E2). & ON-01 \\
+    \multicolumn{4}{@{}l}{\textit{Dentro del alcance propuesto}} \\
+    AL-01 & Registrar la recepci\'on del equipo, sus datos b\'asicos, la falla reportada y el contacto asociado. & ON-02 & B2, C4 \\
+    AL-02 & Guardar el diagn\'ostico, la autorizaci\'on del cliente y el estado de cada reparaci\'on. & ON-02 & B3--B4 \\
+    AL-03 & Consultar y localizar equipos y servicios activos, incluidos los que esperan revisi\'on, autorizaci\'on, repuesto o entrega. & ON-01 & B4--B5, C3--C4 \\
+    AL-04 & Anotar el valor comunicado y si el servicio qued\'o pagado o pendiente, sin procesar pagos. & ON-03 & B3, B7 \\
+    AL-05 & Consultar el historial de reparaciones asociadas a un equipo. & ON-01 & E2 \\
     \midrule
-    \multicolumn{3}{@{}l}{\textit{Fuera del alcance por ahora}} \\
-    FA-01 & Env\'io autom\'atico de mensajes o integraci\'on con WhatsApp; el entrevistado mencion\'o llamadas y mensajes, pero no solicit\'o automatizarlos. & --- \\
-    FA-02 & Control de inventario, reposici\'on autom\'atica o pedidos a proveedores; el flujo y los datos necesarios no se detallaron en SE-01. & --- \\
-    FA-03 & Procesamiento de pagos, facturaci\'on electr\'onica o contabilidad; solo se describi\'o el registro manual del cobro. & --- \\
-    FA-04 & Administraci\'on de reglas y plazos de garant\'ia; se mencion\'o el tema, pero sus condiciones no se especificaron (B8, E2). & --- \\
+    \multicolumn{4}{@{}l}{\textit{Exclusiones propuestas, pendientes de acuerdo}} \\
+    FA-01 & Envío automático de mensajes o integración con WhatsApp; se describieron llamadas y mensajes, pero no se definió su automatización. & --- & B6 \\
+    FA-02 & Control de inventario, reposición automática o pedidos a proveedores; se mencionaron faltantes y pérdidas, pero no se definieron las funciones de ese módulo. & --- & B5, C2 \\
+    FA-03 & Procesamiento de pagos, facturación electrónica o contabilidad; se describió el registro del cobro, sin definir esas funciones. & --- & B7 \\
+    FA-04 & Administración de reglas y plazos de garantía; se mencionó su seguimiento, pero no se especificaron las condiciones. & --- & B8, E2 \\
     \bottomrule
   \end{tabularx}
   \normalsize
 \end{table}
 
-Las exclusiones son provisionales: se podr\'an revisar si el responsable confirma esas necesidades y
-el equipo acuerda incorporarlas. El registro de pagos se limita a dejar constancia del estado del
-cobro; no supone conectar una pasarela ni generar comprobantes tributarios.
+La columna de fuente remite a preguntas de SE-01 (EV-04;
+Anexo~\ref{anx:registro-entrevista}). Los vínculos con los objetivos son propuestas del equipo;
+por ejemplo, B7 respalda el problema de cobros de ON-03 y la capacidad AL-04. AL-05 se relaciona
+con ON-01 porque permitiría consultar antecedentes de un equipo; ese vínculo aún debe validarse.
+
+Las exclusiones son propuestas del equipo, pendientes de acuerdo con el taller. La falta de
+detalle en la entrevista no demuestra que una función sea innecesaria. Antes de cerrar el alcance
+se confirmarán tanto las inclusiones como las exclusiones con el responsable.
 
 \subsection{Restricciones conocidas}
 La Tabla~\ref{tab:restricciones} separa las condiciones expresadas por el responsable de los datos
