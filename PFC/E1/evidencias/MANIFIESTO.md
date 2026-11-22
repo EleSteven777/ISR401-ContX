@@ -22,10 +22,10 @@ sha256sum archivo.pdf
 | ID | Archivo (en la carpeta privada) | Tipo | Fecha | Duración | SHA-256 |
 |----|---------------------------------|------|-------|----------|---------|
 | EV-02 | _(PENDIENTE)_ | Registro del primer contacto (conversación previa) | _(PENDIENTE)_ | _(PENDIENTE)_ | _(PENDIENTE)_ |
-| EV-03 | `EV03_consentimiento_JC-731.pdf` | Consentimiento PFC-ISR401-CONTX-A03 v1.3 firmado | 2026-11-20 | — | _(PENDIENTE)_ |
-| EV-04 | `EV04_transcripcion_SE-01_JC-731.docx` | Transcripción de la entrevista SE-01 | _(PENDIENTE)_ | — | _(PENDIENTE)_ |
+| EV-03 | `Consentimiento_JCcell.pdf` | Consentimiento PFC-ISR401-CONTX-A03 v1.3 firmado (JC-731) | 2026-11-20 | — | `c18cd389baaee379e585adad2cb0387be103883297f6ea5909c8e9880802284c` |
+| EV-04 | `Entrevista_JCcell.docx` | Transcripción de la entrevista SE-01 (JC-731) | 2026-11-21 | — | `9100f5c58ea3030eca5f2e3baf4c88885ead4e8fcb184692ce05291c55e856f9` |
 | EV-05 | `EV05_audio_SE-01_JC-731` | Grabación de audio de SE-01 (autorizada, opción b) | 2026-11-21 | _(PENDIENTE)_ | _(PENDIENTE: confirmar si existe)_ |
 
-> Los nombres de archivo usan el código del participante (JC-731), nunca su nombre.
+> Los nombres de archivo no contienen el nombre del participante; se le identifica con el código JC-731.
 > Si un archivo se modifica después de calcular su huella, la huella debe recalcularse.
 > No se registran evidencias que todavía no existan.
