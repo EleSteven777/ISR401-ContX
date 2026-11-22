@@ -116,24 +116,38 @@ La Tabla~\ref{tab:comunicacion} define qu\'e se comunica, a qui\'en, por qu\'e m
   \end{tabularx}
 \end{table}
 
-\subsection{Registro de riesgos}
-% Riesgos ESPECIFICOS de esta organizacion y este equipo (no genericos).
-% Probabilidad e impacto: 1 (bajo) a 3 (alto); exposicion = P x I.
-La Tabla~\ref{tab:riesgos} registra los riesgos identificados.
+\subsection{Registro de riesgos}\label{sec:registro-riesgos}
 
-\begin{table}[H]
-  \centering
-  \caption{Registro de riesgos.}
-  \label{tab:riesgos}
-  \begin{tabularx}{\linewidth}{@{}L{1.1cm}Y c c c L{4.2cm}@{}}
-    \toprule
-    \textbf{ID} & \textbf{Riesgo} & \textbf{P} & \textbf{I} & \textbf{P$\times$I} & \textbf{Respuesta} \\
-    \midrule
-    RI-01 & \pendiente{riesgo} & \pendiente{} & \pendiente{} & \pendiente{} & \pendiente{respuesta} \\
-    RI-02 & \pendiente{riesgo} & \pendiente{} & \pendiente{} & \pendiente{} & \pendiente{respuesta} \\
-    RI-03 & \pendiente{riesgo} & \pendiente{} & \pendiente{} & \pendiente{} & \pendiente{respuesta} \\
-    RI-04 & \pendiente{riesgo} & \pendiente{} & \pendiente{} & \pendiente{} & \pendiente{respuesta} \\
-    RI-05 & \pendiente{riesgo} & \pendiente{} & \pendiente{} & \pendiente{} & \pendiente{respuesta} \\
-    \bottomrule
-  \end{tabularx}
-\end{table}
+La Tabla~\ref{tab:riesgos} recoge los riesgos que pueden afectar la elaboración y validación de los requisitos. Se basa en la entrevista SE-01 y en los datos que aún faltan por confirmar. Las respuestas son acciones previstas; no indican que el problema ya haya ocurrido.
+
+Se propone valorar la probabilidad (P) y el impacto (I) de 1 a 3: bajo, medio y alto. El producto P$\times$I servirá para ordenar la atención. Los valores son una estimación inicial para revisión del equipo, no frecuencias medidas ni una escala exigida por la guía.
+
+\begingroup
+\small
+\setstretch{1.1}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{@{}L{0.9cm}L{4.5cm}cccL{4.7cm}L{2.5cm}@{}}
+\caption{Riesgos del proyecto y respuestas previstas.}\label{tab:riesgos}\\
+\toprule
+\textbf{ID} & \textbf{Riesgo} & \textbf{P} & \textbf{I} & \textbf{P$\times$I} & \textbf{Respuesta} & \textbf{Responsable} \\
+\midrule
+\endfirsthead
+\multicolumn{7}{@{}l}{\textit{Tabla~\ref{tab:riesgos}. Continuación.}}\\
+\toprule
+\textbf{ID} & \textbf{Riesgo} & \textbf{P} & \textbf{I} & \textbf{P$\times$I} & \textbf{Respuesta} & \textbf{Responsable} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+RI-01 & Formular objetivos que no puedan comprobarse, porque aún no hay cifras sobre la frecuencia de las dificultades ni el tiempo de búsqueda de información (C3 y D1). & 3 & 3 & 9 & Revisar los registros de ejemplo propuestos en E3 y acordar cómo obtener los datos que faltan. No completar cifras por suposición. Si no se obtienen, mantener la medición pendiente y explicar la limitación. & Análisis y documentación; revisión de validación y trazabilidad. \\
+\addlinespace[7pt]
+RI-02 & Retrasar las aclaraciones o la validación por depender del responsable del taller, quien también realiza toda la atención y reparación (A3 y D4). & 2 & 2 & 4 & Agrupar las dudas y coordinar con anticipación una conversación breve. Si no puede atenderla, continuar con los datos confirmados y dejar las decisiones pendientes para otra fecha acordada. & Coordinación y elicitación. \\
+\addlinespace[7pt]
+RI-03 & Incluir funciones sin respaldo al mezclar los problemas comentados inicialmente con lo dicho en la entrevista, generando un alcance que no responda a la prioridad del taller (C4 y pendientes de SE-01). & 2 & 3 & 6 & Relacionar cada capacidad con una respuesta o evidencia y consultar las diferencias con el responsable. No presentar como confirmado lo que solo sea una propuesta del equipo. & Validación y trazabilidad; apoyo de análisis y documentación. \\
+\addlinespace[7pt]
+RI-04 & Publicar por descuido datos personales presentes en las notas, el consentimiento o los registros de ejemplo del taller, afectando la privacidad de participantes y clientes. & 2 & 3 & 6 & Mantener los originales en la carpeta privada y revisar la copia anonimizada antes de subirla. Si se detecta una publicación indebida, retirar el acceso público al archivo, avisar al docente y coordinar su tratamiento. & Custodia de evidencias; revisión de validación y trazabilidad. \\
+\end{longtable}
+\endgroup
+
+El equipo revisará los riesgos durante el proyecto. Si alguno ocurre, el responsable aplicará la respuesta prevista.
