@@ -1,70 +1,110 @@
 % =====================================================================
-%  Instrumento 1: guion de entrevista semiestructurada
+%  Instrumento ENT-01: guion de entrevista semiestructurada (v1.1)
+%  Transcripcion del guion preparado por el equipo y aplicado en SE-01.
 %  Se incluye como anexo desde main.tex.
-%  Cada pregunta debe trazarse a un objetivo de negocio (ON-xx) o a una
-%  capacidad del alcance (AL-xx). Escriba preguntas abiertas, propias de
-%  la organizacion; evite preguntas genericas validas para cualquier
-%  sistema.
 % =====================================================================
 
-\subsection*{Datos de la sesi\'on}
-\begin{tabularx}{\linewidth}{@{}L{4.5cm}Y@{}}
+\subsection*{Identificaci\'on de la sesi\'on}
+\begin{tabularx}{\linewidth}{@{}L{5cm}Y@{}}
   \toprule
-  C\'odigo de sesi\'on & SE-01 \\
-  Parte interesada (rol) & \pendiente{PI-xx, rol} \\
-  C\'odigo del participante & P\_\_\_ (sin nombre) \\
-  Fecha, hora y lugar & \\
-  Entrevistador / anotador & \\
-  Duraci\'on prevista & \pendiente{45 min} \\
-  Consentimiento firmado & S\'i \quad No \\
+  Instrumento & ENT-01, versi\'on 1.1 \\
+  Sesi\'on & SE-01 \\
+  Participante & JC-731 \\
+  Rol previsto & Responsable del taller; confirmar al iniciar \\
+  Duraci\'on prevista & 45--60 minutos; acordar con el participante \\
+  Consentimiento & PFC-ISR401-CONTX-A03, versi\'on 1.3 (Anexo~\ref{anx:consentimiento}); confirmar firma anterior al inicio \\
+  Participaci\'on y uso acad\'emico (a) & Registrar S\'i / No; si No o sin marcar, no iniciar \\
+  Audio (b) & Registrar S\'i / No; sin autorizaci\'on expresa, usar solo notas \\
+  Citas textuales (c) & Registrar S\'i / No; respetar la decisi\'on al elaborar documentos \\
   \bottomrule
 \end{tabularx}
 
-\subsection*{Objetivo de la entrevista}
-\pendiente{Qu\'e conocimiento se busca obtener de este rol y para qu\'e objetivo de negocio.}
+\medskip
+El guion no sustituye al consentimiento firmado. En esta sesi\'on no se realizan videos,
+fotograf\'ias, observaciones del trabajo ni cuestionarios.
+
+\subsection*{Prop\'osito y t\'ecnica}
+Conocer c\'omo funciona el taller y c\'omo se atiende un servicio de reparaci\'on, para identificar
+necesidades, participantes, prioridades y restricciones. No se da por confirmado ning\'un problema
+ni se propone un alcance de software antes de escuchar y validar la informaci\'on.
+
+Se utiliza una entrevista semiestructurada porque el responsable puede explicar sus tareas,
+decisiones y expectativas con sus propias palabras, y el entrevistador puede profundizar en
+ejemplos. La fuente es su experiencia en la gesti\'on del taller; se busca principalmente
+conocimiento que pueda expresar verbalmente. Los aspectos dif\'iciles de explicar o las versiones
+contradictorias se registran para validarlos con otra fuente o t\'ecnica.
+
+\subsection*{Objetivos de exploraci\'on}
+\begin{tabularx}{\linewidth}{@{}L{1.4cm}YL{2.2cm}@{}}
+  \toprule
+  \textbf{ID} & \textbf{Objetivo} & \textbf{Preguntas} \\
+  \midrule
+  OE-01 & Describir organizaci\'on, funciones y participantes & A1--A4, D4 \\
+  OE-02 & Reconstruir el proceso actual, sus decisiones e informaci\'on utilizada & B1--B8 \\
+  OE-03 & Identificar fortalezas, dificultades y evidencia disponible & C1--C3 \\
+  OE-04 & Reconocer prioridades, resultados esperados y restricciones & C4, D1--D3 \\
+  OE-05 & Validar lo entendido y acordar c\'omo comprobar los datos pendientes & E1--E3 \\
+  \bottomrule
+\end{tabularx}
+
+\subsection*{Indicaciones para quien entrevista}
+\begin{itemize}[nosep]
+  \item Formular una pregunta a la vez, escuchar y no sugerir respuestas.
+  \item Las repreguntas son opcionales; si un tema ya fue respondido, confirmar lo entendido.
+  \item No presentar como hechos los antecedentes comentados antes de la entrevista.
+  \item Pedir ejemplos sin nombres, tel\'efonos ni informaci\'on identificable de clientes; no
+        solicitar credenciales, contenido privado de equipos ni datos bancarios.
+  \item Distinguir lo dicho por el participante de las conclusiones del equipo; anotar si una
+        cifra es un registro, una estimaci\'on o una opini\'on. No inventar valores.
+\end{itemize}
 
 \subsection*{Apertura (5 min)}
-\begin{enumerate}[label=A\arabic*.]
-  \item Presentaci\'on del equipo y del prop\'osito de la sesi\'on.
-  \item Lectura del consentimiento; confirmaci\'on de grabaci\'on (s\'olo si el participante acepta).
+\begin{enumerate}[nosep]
+  \item Presentar a quienes entrevistan y toman notas.
+  \item Entregar y explicar el consentimiento; la persona lo lee, marca sus decisiones y firma.
+  \item Comprobar las opciones a, b y c sin marcarlas por el participante.
+  \item Confirmar el tiempo disponible y explicar el prop\'osito de la conversaci\'on.
 \end{enumerate}
 
-\subsection*{Bloque 1: rol y tareas actuales}
-\begin{tabularx}{\linewidth}{@{}L{1cm}YL{1.6cm}@{}}
-  \toprule
-  \textbf{N.\textsuperscript{o}} & \textbf{Pregunta} & \textbf{Traza} \\
-  \midrule
-  1.1 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  1.2 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  1.3 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  \bottomrule
-\end{tabularx}
+\subsection*{A. Organizaci\'on y participantes (5 min)}
+\begin{description}[style=nextline,leftmargin=0.6cm,font=\normalfont\bfseries]
+  \item[A1. ?`Cu\'al es su funci\'on en JC\textbar{}cell?] Repregunta: ?`qu\'e decisiones toma como parte de esa funci\'on?
+  \item[A2. ?`Qu\'e servicios ofrece actualmente el taller?] Repregunta: ?`desde hace cu\'anto funciona el taller?
+  \item[A3. ?`C\'omo se distribuyen las tareas entre las personas que trabajan en el taller?] Repreguntas: ?`cu\'antas personas trabajan habitualmente?, ?`qu\'e tarea realiza cada persona? (sin nombres).
+  \item[A4. ?`Con qui\'enes se comunica normalmente para coordinar una reparaci\'on?] Repreguntas: ?`para qu\'e se comunica con cada uno?, ?`qu\'e informaci\'on necesita recibir de ellos? (por roles).
+\end{description}
 
-\subsection*{Bloque 2: problemas y causas}
-\begin{tabularx}{\linewidth}{@{}L{1cm}YL{1.6cm}@{}}
-  \toprule
-  \textbf{N.\textsuperscript{o}} & \textbf{Pregunta} & \textbf{Traza} \\
-  \midrule
-  2.1 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  2.2 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  2.3 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  \bottomrule
-\end{tabularx}
+\subsection*{B. Recorrido de un servicio (20 min)}
+\begin{description}[style=nextline,leftmargin=0.6cm,font=\normalfont\bfseries]
+  \item[B1. ?`Podr\'ia contar c\'omo atendieron una reparaci\'on reciente, desde que recibieron el equipo hasta que lo entregaron?] Caso real sin identificar al cliente.
+  \item[B2. ?`Qu\'e hacen cuando reciben un equipo para reparaci\'on?] Repreguntas: ?`qu\'e informaci\'on registran?, ?`d\'onde?, ?`c\'omo identifican cada equipo?, ?`c\'omo saben d\'onde est\'a guardado?
+  \item[B3. ?`C\'omo determinan qu\'e trabajo necesita el equipo?] Repreguntas: ?`c\'omo calculan el precio?, ?`c\'omo lo explican?, ?`c\'omo confirma el cliente?, ?`qu\'e hacen si no acepta?
+  \item[B4. ?`C\'omo conocen el avance de cada reparaci\'on?] Repreguntas: ?`qu\'e etapas sigue un equipo?, ?`qui\'en registra los avances?, ?`c\'omo se entera otra persona del estado?
+  \item[B5. Cuando una reparaci\'on necesita una pieza, ?`qu\'e pasos siguen para conseguirla?] Repreguntas: ?`c\'omo saben qu\'e repuestos tienen?, ?`c\'omo registran las piezas usadas?, ?`qu\'e hacen si no est\'a disponible?
+  \item[B6. ?`C\'omo se comunican con el cliente durante el servicio?] Repreguntas: ?`en qu\'e momentos?, ?`c\'omo saben si recibi\'o el mensaje?, ?`qu\'e hacen si no responde?
+  \item[B7. ?`C\'omo gestionan el cobro de un servicio?] Repreguntas: ?`d\'onde anotan el pago?, ?`c\'omo comprueban pagos pendientes?, ?`qu\'e comprobante entregan? (sin datos bancarios).
+  \item[B8. ?`C\'omo realizan la entrega del equipo al cliente?] Repreguntas: ?`qu\'e comprueban antes?, ?`c\'omo dejan constancia?, ?`qu\'e hacen si el cliente regresa por la misma reparaci\'on?
+\end{description}
 
-\subsection*{Bloque 3: expectativas y restricciones}
-\begin{tabularx}{\linewidth}{@{}L{1cm}YL{1.6cm}@{}}
-  \toprule
-  \textbf{N.\textsuperscript{o}} & \textbf{Pregunta} & \textbf{Traza} \\
-  \midrule
-  3.1 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  3.2 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  3.3 & \pendiente{pregunta} & \pendiente{ON/AL} \\
-  \bottomrule
-\end{tabularx}
+\subsection*{C. Fortalezas, dificultades y evidencia (10 min)}
+\begin{description}[style=nextline,leftmargin=0.6cm,font=\normalfont\bfseries]
+  \item[C1. ?`Qu\'e partes de este proceso funcionan bien y convendr\'ia conservar?] \mbox{}
+  \item[C2. ?`En qu\'e partes del trabajo, si las hay, encuentra dificultades?] Si no reporta dificultades, pasar a C4.
+  \item[C3. Sobre una de las dificultades que mencion\'o, ?`podr\'ia describir un caso reciente?] Repreguntas: qu\'e ocurri\'o, c\'omo se resolvi\'o, a qui\'enes afect\'o, con qu\'e frecuencia y en qu\'e per\'iodo, si la frecuencia est\'a registrada o es estimada, consecuencias y registro que permitir\'ia comprobarlo.
+  \item[C4. Si pudiera mejorar un solo aspecto del trabajo, ?`cu\'al elegir\'ia primero?] Repregunta: ?`por qu\'e lo considera prioritario?
+\end{description}
 
-\subsection*{Cierre (5 min)}
-\begin{enumerate}[label=C\arabic*.]
-  \item ?`Hay algo importante sobre su trabajo que no se haya preguntado?
-  \item ?`Qu\'e otra persona (rol) deber\'ia entrevistarse?
-  \item Agradecimiento y explicaci\'on de los siguientes pasos.
-\end{enumerate}
+\subsection*{D. Resultados esperados y condiciones (10 min)}
+\begin{description}[style=nextline,leftmargin=0.6cm,font=\normalfont\bfseries]
+  \item[D1. ?`C\'omo se dar\'ia cuenta de que la mejora que propone est\'a funcionando?] Repreguntas: qu\'e cambiar\'ia en el trabajo diario, qu\'e podr\'ia comparar, si existe un registro para comparar.
+  \item[D2. ?`Con qu\'e recursos cuentan actualmente para organizar el trabajo?] Repreguntas: aplicaciones o sistemas, equipos disponibles, conexi\'on a Internet.
+  \item[D3. ?`Qu\'e condiciones deber\'ian respetarse al plantear una mejora?] Repreguntas: limitaciones de tiempo, recursos o presupuesto (sin montos), actividades que deben continuar y actividades fuera del proyecto.
+  \item[D4. ?`A qui\'enes convendr\'ia consultar para entender mejor el trabajo del taller y revisar una propuesta de mejora?] Repreguntas: qu\'e necesitar\'ia cada uno, qui\'en decide, disponibilidad.
+\end{description}
+
+\subsection*{E. Cierre (5 min)}
+\begin{description}[style=nextline,leftmargin=0.6cm,font=\normalfont\bfseries]
+  \item[E1. ?`Qu\'e deber\'iamos corregir o completar de este resumen?] Resumir antes el proceso y las necesidades expresadas.
+  \item[E2. ?`Hay alg\'un tema importante que no hayamos tratado?] \mbox{}
+  \item[E3. ?`C\'omo podr\'iamos verificar la informaci\'on que qued\'o pendiente?] Acordar, solo si acepta, c\'omo revisar el resumen; registrar la hora de finalizaci\'on.
+\end{description}
