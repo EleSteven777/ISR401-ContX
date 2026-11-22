@@ -3,84 +3,96 @@
 % =====================================================================
 
 \subsection{Declaraci\'on de visi\'on}
-% Formato sugerido (Moore): Para <usuarios>, que <necesidad>, el <sistema>
-% es un <categoria> que <beneficio clave>. A diferencia de <alternativa
-% actual>, nuestro producto <diferenciador>.
-\pendiente{Declaraci\'on de visi\'on de 3 a 5 l\'ineas.}
+Para la persona responsable de JC\textbar{}cell, que necesita encontrar con facilidad los datos
+de los equipos recibidos y conocer el avance de cada reparaci\'on, proponemos una herramienta
+sencilla que concentre el registro de ingreso, el diagn\'ostico y el estado del servicio. Se busca
+reducir el tiempo que hoy dedica a revisar anotaciones y ayudarle a identificar los trabajos
+pendientes, manteniendo su atenci\'on directa, sus diagn\'osticos y sus reparaciones. Esta es una
+propuesta acad\'emica basada en SE-01 (B2, B4, C3--C4, D3; EV-04), no un compromiso de construir o
+instalar el sistema; su alcance debe validarse con el responsable del taller.
 
 \subsection{Objetivos de negocio}
-% Minimo 3. Cada objetivo debe ser medible: indicador, linea base (valor
-% actual, de donde sale) y meta con plazo. Sin linea base real, el
-% objetivo no es verificable.
-La Tabla~\ref{tab:objetivos} presenta los objetivos de negocio con su indicador, l\'inea base y meta.
+El participante expres\'o que le gustar\'ia encontrar antes la informaci\'on de cada equipo, ubicar
+las reparaciones pendientes y evitar confusiones y cobros olvidados (SE-01, C4, D1; EV-04).
+La entrevista no incluy\'o mediciones iniciales ni metas acordadas. Por eso, los indicadores de la
+Tabla~\ref{tab:objetivos} son propuestas para medir esos resultados; las l\'ineas base, metas y
+plazos se completar\'an tras revisar ejemplos anonimizados y acordarlos con el responsable. Hasta
+entonces, los objetivos siguen como borrador y no se consideran verificables.
 
 \begin{table}[H]
   \centering
-  \caption{Objetivos de negocio medibles.}
+  \caption{Objetivos de negocio e indicadores propuestos para validar.}
   \label{tab:objetivos}
+  \small
+  \renewcommand{\arraystretch}{1.25}
   \noindent\begin{tabularx}{\linewidth}{@{}L{1.1cm}YL{2.6cm}L{2.4cm}L{2.4cm}@{}}
     \toprule
-    \textbf{ID} & \textbf{Obje\-tivo} & \textbf{Indicador} & \textbf{L\'inea base} & \textbf{Meta y plazo} \\
+    \textbf{ID} & \textbf{Resultado buscado} & \textbf{Indicador} & \textbf{L\'inea base} & \textbf{Meta y plazo} \\
     \midrule
-    ON-01 & \pendiente{objetivo} & \pendiente{indicador} & \pendiente{valor actual y fuente} & \pendiente{valor y fecha} \\
-    ON-02 & \pendiente{objetivo} & \pendiente{indicador} & \pendiente{valor actual y fuente} & \pendiente{valor y fecha} \\
-    ON-03 & \pendiente{objetivo} & \pendiente{indicador} & \pendiente{valor actual y fuente} & \pendiente{valor y fecha} \\
+    ON-01 & Reducir el tiempo que toma localizar los datos y el estado de un servicio. & Mediana de minutos para encontrar una ficha en una muestra. & \pendiente{medir con ejemplos anonimizados (E3)} & \pendiente{acordar meta y fecha tras medir} \\
+    ON-02 & Mejorar la consistencia del seguimiento de las reparaciones. & Porcentaje de servicios muestreados cuyo estado registrado coincide con el estado reportado. & \pendiente{revisar ejemplos de trabajos (E3)} & \pendiente{acordar porcentaje y plazo} \\
+    ON-03 & Disminuir los cobros pendientes que quedan sin seguimiento al entregar un equipo. & N\'umero de servicios entregados con saldo pendiente no identificado en el registro. & \pendiente{revisar ejemplos de cobro (E3)} & \pendiente{acordar meta y fecha tras medir} \\
     \bottomrule
   \end{tabularx}
+  \normalsize
 \end{table}
 
 \subsection{Alcance}
-% Liste capacidades de alto nivel (no requisitos detallados). Lo que NO
-% entra es tan importante como lo que entra: evita ambiguedad.
-La Tabla~\ref{tab:alcance} delimita lo que el sistema incluye y lo que queda fuera.
+La propuesta se centra en que el responsable pueda registrar y consultar los servicios del taller.
+Las capacidades de la Tabla~\ref{tab:alcance} se derivan de SE-01 (B2--B7, C4, D1--D3, E2;
+EV-04) y siguen pendientes de revisi\'on con el responsable; la entrevista no defini\'o todos los
+detalles de operaci\'on.
 
 \begin{table}[H]
   \centering
-  \caption{Alcance del sistema.}
+  \caption{Alcance propuesto para validar con el responsable.}
   \label{tab:alcance}
+  \small
+  \renewcommand{\arraystretch}{1.2}
   \noindent\begin{tabularx}{\linewidth}{@{}L{1.3cm}YL{1.6cm}@{}}
     \toprule
-    \textbf{ID} & \textbf{Capacidad} & \textbf{Obje\-tivo} \\
+    \textbf{ID} & \textbf{Capacidad propuesta} & \textbf{Objetivo} \\
     \midrule
     \multicolumn{3}{@{}l}{\textit{Dentro del alcance}} \\
-    AL-01 & \pendiente{capacidad} & ON-01 \\
-    AL-02 & \pendiente{capacidad} & ON-02 \\
-    AL-03 & \pendiente{capacidad} & ON-03 \\
+    AL-01 & Registrar la recepci\'on del equipo, sus datos b\'asicos, la falla reportada y el contacto asociado. & ON-02 \\
+    AL-02 & Guardar el diagn\'ostico, la autorizaci\'on del cliente y el estado de cada reparaci\'on. & ON-02 \\
+    AL-03 & Consultar y localizar equipos y servicios activos, incluidos los que esperan revisi\'on, autorizaci\'on, repuesto o entrega. & ON-01 \\
+    AL-04 & Anotar el valor comunicado y si el servicio qued\'o pagado o pendiente, sin procesar pagos. & ON-03 \\
+    AL-05 & Consultar el historial de reparaciones asociadas a un equipo; su inclusi\'on se confirmar\'a con el responsable (E2). & ON-01 \\
     \midrule
-    \multicolumn{3}{@{}l}{\textit{Fuera del alcance}} \\
-    FA-01 & \pendiente{lo que no se har\'a y por qu\'e} & --- \\
-    FA-02 & \pendiente{lo que no se har\'a y por qu\'e} & --- \\
+    \multicolumn{3}{@{}l}{\textit{Fuera del alcance por ahora}} \\
+    FA-01 & Env\'io autom\'atico de mensajes o integraci\'on con WhatsApp; el entrevistado mencion\'o llamadas y mensajes, pero no solicit\'o automatizarlos. & --- \\
+    FA-02 & Control de inventario, reposici\'on autom\'atica o pedidos a proveedores; el flujo y los datos necesarios no se detallaron en SE-01. & --- \\
+    FA-03 & Procesamiento de pagos, facturaci\'on electr\'onica o contabilidad; solo se describi\'o el registro manual del cobro. & --- \\
+    FA-04 & Administraci\'on de reglas y plazos de garant\'ia; se mencion\'o el tema, pero sus condiciones no se especificaron (B8, E2). & --- \\
     \bottomrule
   \end{tabularx}
+  \normalsize
 \end{table}
 
+Las exclusiones son provisionales: se podr\'an revisar si el responsable confirma esas necesidades y
+el equipo acuerda incorporarlas. El registro de pagos se limita a dejar constancia del estado del
+cobro; no supone conectar una pasarela ni generar comprobantes tributarios.
+
 \subsection{Restricciones conocidas}
-% Tipos: presupuesto, tiempo (semana 17), tecnologia existente en la
-% organizacion, normativa (p. ej. LOPDP \cite{lopdp2021}), infraestructura,
-% conectividad, habilidades de los usuarios.
-%
-% Si una restriccion se refiere a calidad del producto, puede vincularse
-% a ISO/IEC 25010:2023 \cite{iso25010}. Cite SOLO clausulas que existen;
-% las que estan en la vista previa disponible son, por ejemplo:
-%   3.2   performance efficiency      3.2.1 time behaviour
-%   3.3   compatibility               3.3.2 interoperability
-%   3.4   interaction capability      3.4.3 operability
-% No invente numeros de clausula (indicio G2).
-La Tabla~\ref{tab:restricciones} recoge las restricciones identificadas hasta la fecha. Las
-restricciones de calidad del producto se expresan con las caracter\'isticas del modelo de
-ISO/IEC 25010:2023 \cite{iso25010}.
+La Tabla~\ref{tab:restricciones} separa las condiciones expresadas por el responsable de los datos
+que todav\'ia deben confirmarse. No se fija una plataforma t\'ecnica ni una obligaci\'on legal que no
+haya sido verificada para este proyecto.
 
 \begin{table}[H]
   \centering
-  \caption{Restricciones conocidas.}
+  \caption{Restricciones y asuntos por confirmar.}
   \label{tab:restricciones}
-  \noindent\begin{tabularx}{\linewidth}{@{}L{1.3cm}L{2.6cm}YL{2.6cm}@{}}
+  \small
+  \renewcommand{\arraystretch}{1.2}
+  \noindent\begin{tabularx}{\linewidth}{@{}L{1.1cm}L{2.2cm}YL{2.4cm}@{}}
     \toprule
-    \textbf{ID} & \textbf{Tipo} & \textbf{Restricci\'on} & \textbf{Origen} \\
+    \textbf{ID} & \textbf{Tipo} & \textbf{Condici\'on} & \textbf{Origen} \\
     \midrule
-    RE-01 & Normativa  & \pendiente{p. ej., tratamiento de datos personales de clientes} & \cite{lopdp2021} \\
-    RE-02 & Tiempo     & \pendiente{fecha l\'imite del PFC} & Gu\'ia del PFC \\
-    RE-03 & \pendiente{tipo} & \pendiente{restricci\'on} & \pendiente{qui\'en la indic\'o} \\
+    RE-01 & Datos y privacidad & Los ejemplos usados en el proyecto deben mantenerse anonimizados; los originales y datos identificables no se publican. El tratamiento, acceso y conservaci\'on de datos reales del sistema a\'un deben definirse. & Manifiesto de evidencias; EV-03 y EV-04 \\
+    RE-02 & Recursos & La propuesta debe considerar la computadora, los celulares y la conexi\'on disponibles, y no requerir equipos costosos ni conocimientos t\'ecnicos avanzados. La plataforma y la calidad m\'inima de conexi\'on quedan por validar. & SE-01, D2--D3; EV-04 \\
+    RE-03 & Plazo del proyecto & La fecha l\'imite y el calendario de hitos deben confirmarse con el cronograma oficial antes de fijar metas. & Cronograma del PFC; fecha pendiente de confirmaci\'on \\
     \bottomrule
   \end{tabularx}
+  \normalsize
 \end{table}
